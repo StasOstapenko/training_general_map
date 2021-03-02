@@ -51,7 +51,7 @@
             } else {
               highlightLayer.setStyle({
                 fillColor: '#ffff00',
-                fillOpacity: 1
+                fillOpacity: 0.4
               });
             }
         }
@@ -830,7 +830,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(231,113,72,0.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_ADMIN_1_5');
@@ -838,7 +838,7 @@
         map.getPane('pane_ADMIN_1_5').style['mix-blend-mode'] = 'normal';
         var layer_ADMIN_1_5 = new L.geoJson(json_ADMIN_1_5, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_ADMIN_1_5',
             layerName: 'layer_ADMIN_1_5',
             pane: 'pane_ADMIN_1_5',
@@ -858,7 +858,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/ADMIN_1_5.png" /> ADMIN_1': layer_ADMIN_1_5,'Залученість тергромад до навчання<br /><table><tr><td style="text-align: center;"><img src="legend/_4_Відсутні0.png" /></td><td>Відсутні</td></tr><tr><td style="text-align: center;"><img src="legend/_4_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/_4_232.png" /></td><td>2-3</td></tr><tr><td style="text-align: center;"><img src="legend/_4_4103.png" /></td><td>4-10</td></tr><tr><td style="text-align: center;"><img src="legend/_4_Більше104.png" /></td><td>Більше 10</td></tr><tr><td style="text-align: center;"><img src="legend/_4_Тимчасовоокупованатериторія5.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__4,'Залученість тергромад до навчання за тематикою "Громада з нуля"<br /><table><tr><td style="text-align: center;"><img src="legend/_3_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_3_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_3_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__3,'Залученість тергромад до навчання за тематикою "Навчання з надання послуг і управління інфраструктурою на місцевому рівні"<br /><table><tr><td style="text-align: center;"><img src="legend/_2_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_2_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_2_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__2,'Залученість тергромад до навчання за тематикою "Навчання загального управлінського характеру"<br /><table><tr><td style="text-align: center;"><img src="legend/_1_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_1_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_1_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Залученість тергромад до навчання<br /><table><tr><td style="text-align: center;"><img src="legend/_4_Відсутні0.png" /></td><td>Відсутні</td></tr><tr><td style="text-align: center;"><img src="legend/_4_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/_4_232.png" /></td><td>2-3</td></tr><tr><td style="text-align: center;"><img src="legend/_4_4103.png" /></td><td>4-10</td></tr><tr><td style="text-align: center;"><img src="legend/_4_Більше104.png" /></td><td>Більше 10</td></tr><tr><td style="text-align: center;"><img src="legend/_4_Тимчасовоокупованатериторія5.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__4,'Залученість тергромад до навчання за тематикою "Громада з нуля"<br /><table><tr><td style="text-align: center;"><img src="legend/_3_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_3_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_3_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__3,'Залученість тергромад до навчання за тематикою </p>"Навчання з надання послуг і управління інфраструктурою на місцевому рівні"<br /><table><tr><td style="text-align: center;"><img src="legend/_2_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_2_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_2_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__2,'Залученість тергромад до навчання за тематикою </p>"Навчання загального управлінського характеру"<br /><table><tr><td style="text-align: center;"><img src="legend/_1_Охоплено0.png" /></td><td>Охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_1_Неохоплено1.png" /></td><td>Не охоплено</td></tr><tr><td style="text-align: center;"><img src="legend/_1_Тимчасовоокупованатериторія2.png" /></td><td>Тимчасово окупована територія</td></tr></table>': layer__1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer__4,
